@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="University Student Activity Management Portal. Explore events and register for activities.">
+
+    <meta name="author" content="University Student Team">
+
+    <title>CampusConnect | Student Activity Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>CampusConnect</h1>
+        <p>University Student Activity Management Portal</p>
+
+        <!-- NAVIGATION -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Welcome to CampusConnect!</h2>
+
+            <p>
+                Discover university events, participate in activities,
+                showcase your talents and connect with other students.
+            </p>
+
+            <a href="#events">Explore Events</a>
+        </section>
+
+        <!-- EVENTS SECTION -->
+        <section id="events" aria-labelledby="events-heading">
+
+            <h2 id="events-heading">Upcoming Events</h2>
+
+            <article>
+                <h3>Tech Fest 2026</h3>
+                <p>Date: December 10, 2026</p>
+                <p>Explore coding competitions, robotics and innovations.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>Date: December 15, 2026</p>
+                <p>Experience music, dance, art and cultural performances.</p>
+            </article>
+
+            <article>
+                <h3>Sports Meet</h3>
+                <p>Date: December 20, 2026</p>
+                <p>Participate in indoor and outdoor sports competitions.</p>
+            </article>
+
+        </section>
+
+        <!-- ACTIVITIES SECTION -->
+        <section id="activities" aria-labelledby="activities-heading">
+
+            <h2 id="activities-heading">University Activities</h2>
+
+            <article>
+                <h3>Technical Clubs</h3>
+                <p>Join coding, AI, robotics and electronics clubs.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Clubs</h3>
+                <p>Participate in music, dance, drama and art activities.</p>
+            </article>
+
+            <article>
+                <h3>Social Activities</h3>
+                <p>Take part in volunteering and community service.</p>
+            </article>
+
+        </section>
+
+        <!-- ASIDE -->
+        <aside aria-labelledby="announcement-heading">
+            <h2 id="announcement-heading">Announcements</h2>
+            <p>Event registrations are now open!</p>
+            <p>Register early to reserve your participation.</p>
+        </aside>
+
+        <!-- REGISTRATION FORM -->
+        <section id="register" aria-labelledby="register-heading">
+
+            <h2 id="register-heading">Student Registration Form</h2>
+
+            <form id="registrationForm">
+
+                <!-- TEXT INPUTS -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required>
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="student@example.com"
+                        autocomplete="email"
+                        required>
+
+                    <label for="studentid">Student ID:</label>
+                    <input
+                        type="text"
+                        id="studentid"
+                        name="studentid"
+                        placeholder="Enter student ID"
+                        required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter phone number"
+                        autocomplete="tel"
+                        required>
+                </fieldset>
+
+                <!-- DROPDOWN -->
+                <fieldset>
+                    <legend>Academic Information</legend>
+
+                    <label for="department">Department:</label>
+
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="cse">Computer Science</option>
+                        <option value="ece">Electronics</option>
+                        <option value="eee">Electrical</option>
+                        <option value="mech">Mechanical</option>
+                        <option value="civil">Civil</option>
+                    </select>
+
+                    <label for="year">Year of Study:</label>
+
+                    <select id="year" name="year" required>
+                        <option value="">Select Year</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth Year</option>
+                    </select>
+                </fieldset>
+
+                <!-- RADIO BUTTONS -->
+                <fieldset>
+                    <legend>Participation Type</legend>
+
+                    <input type="radio" id="individual"
+                        name="participation" value="individual" required>
+                    <label for="individual">Individual</label>
+
+                    <input type="radio" id="team"
+                        name="participation" value="team">
+                    <label for="team">Team</label>
+                </fieldset>
+
+                <!-- CHECKBOXES -->
+                <fieldset>
+                    <legend>Select Activities</legend>
+
+                    <input type="checkbox" id="coding"
+                        name="activities" value="coding">
+                    <label for="coding">Coding Competition</label>
+
+                    <input type="checkbox" id="sports"
+                        name="activities" value="sports">
+                    <label for="sports">Sports</label>
+
+                    <input type="checkbox" id="cultural"
+                        name="activities" value="cultural">
+                    <label for="cultural">Cultural Activities</label>
+
+                    <input type="checkbox" id="robotics"
+                        name="activities" value="robotics">
+                    <label for="robotics">Robotics</label>
+                </fieldset>
+
+                <!-- TEXTAREA -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="comments">
+                        Why do you want to participate?
+                    </label>
+
+                    <textarea
+                        id="comments"
+                        name="comments"
+                        rows="5"
+                        placeholder="Write your message here..."></textarea>
+                </fieldset>
+
+                <!-- SUBMIT -->
+                <button type="submit">Submit Registration</button>
+
+                <p id="formMessage" role="status"
+                    aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 CampusConnect. All rights reserved.</p>
+        <p>University Student Activity Management Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
